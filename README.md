@@ -7,4 +7,4 @@ Universitas : Institut Pertanian Bogor
 - Animation when hovering over movies
 
 # Screenshot
-https://drive.google.com/drive/u/1/folders/16Y-5b5Zd8a2vOnEniHgHlOMhI3gRbFlA
+https://drive.google.com/file/d/1OJVhbQzjqkftTMKpaKpGwY7YxN_LVvCb/view?usp=sharing
