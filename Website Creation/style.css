@@ -39,6 +39,12 @@ body{
     list-style: none;
 }
 
+.container {
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+  }
+
 .menu-list-item{
     margin-right: 30px;
 }
@@ -77,3 +83,89 @@ body{
     justify-content: space-around;
     padding-top: 60px;
 }
+
+.content-container{
+    margin-left: 50px;
+}
+
+.featured-content {
+    height: 50vh;
+    padding: 50px;
+    font-family: 'DotGothic16', sans-serif;
+    color: rgb(153, 151, 245);
+    font-size: 25px;
+    text-align: center;
+  }
+
+.movie-list-container{
+      padding: 0 20px;
+  }
+
+.movie-list-item{
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-title{
+    margin-bottom: 20px;
+}
+
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30;
+}
+
+.movie-list-item:hover .movie-list-item-description,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-button{
+    transition: all 1s ease-in-out;
+    opacity: 100%;
+
+}
+
+
+.movie-list-item-img {
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+.movie-list{
+      display: flex;
+      align-items: center;
+      height: 200px;
+  }
+
+  .movie-list-item-description{
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 10px;
+    opacity: 0%;
+
+  }.movie-list-item-desc{
+    background-color: #333;
+    padding: 10px;
+    font-size: 15px;
+    position: absolute;
+    top: 27%;
+    left: 10px;
+    width: 165px;
+    opacity: 0%;
+
+  }
+
+  .movie-list-button{
+      padding: 10 10;
+      border-radius: 15px;
+      background-color: rgb(194, 193, 253);
+      position: absolute;
+      top: 80%;
+      left: 200px;
+      outline: none;
+      opacity: 0%;
+  }
