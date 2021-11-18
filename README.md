@@ -1,6 +1,6 @@
 # GDSC Movie Assignment
-Nama        : Muhammad Irfan Satriya Dewanto
-Universitas : Institut Pertanian Bogor
+<div>Nama        : Muhammad Irfan Satriya Dewanto</div>
+<div>Universitas : Institut Pertanian Bogor</div>
 
 # Web Feature
 - Clicking the movie lead you to imdb.com
