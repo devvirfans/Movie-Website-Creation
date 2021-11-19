@@ -8,6 +8,7 @@
     <title>Movies</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="cart.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -15,10 +16,11 @@
             <div class="logo-container"><h1 class="logo">SPACE</h1></div>
             <div class="menu-container">
                 <ul class="menu-list">
-                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item" style="font-weight: bold;">Home</li>
                     <li class="menu-list-item">Movies</li>
                     <li class="menu-list-item">Series</li>
                     <li class="menu-list-item">Trends</li>
+                    <li class="menu-list-item">Watchlist</li>
                 </ul>
             </div>
             <div class="profile-container">
@@ -49,21 +51,27 @@
                     </div>
                 </div>
                 <div class="movie-list-container">
-                    <h1 class="movie-list-title">POPULAR</h1>
+                    <h1 class="movie-list-title">MOVIES</h1>
                     <div class="movie-list-wrapper">
                         <div class="movie-list">
                             <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="./Jumper.jpeg" alt="In Time">
-                                <span class="movie-list-item-description">Jumper</span>
-                                <p class="movie-list-item-desc">Becerita tentang  seseorang yang melakukan teleportasi sesuka hati 
-                                    dia namum kehidupannya tidak aman di karena seorang paladin yang ingin membunuh jumper.</p>
-                                    <a href="https://www.imdb.com/title/tt0489099/?ref_=fn_al_tt_1"><Button class="movie-list-button">Watch</Button></a>
+                                <img class="movie-list-item-img" src="./Inception.jpg" alt="Inception">
+                                <span class="movie-list-item-description">Inception</span>
+                                <p class="movie-list-item-desc">Cobb, mata-mata ahli, mencuri informasi dari targetnya dengan masuk ke dalam mimpi mereka. Ia diburu atas pembunuhan istrinya, 
+                                    dan satu-satunya cara untuk menebus semua ini, adalah degan Inception.</p>
+                                    <a href="https://www.imdb.com/title/tt1375666/"><Button class="movie-list-button">Watch</Button></a>
                             </div><div class="movie-list-item">
-                                <img class="movie-list-item-img" src="./Interstelar.jpg" alt="In Time">
+                                <img class="movie-list-item-img" src="./Interstelar.jpg" alt="Interstelar">
                                 <span class="movie-list-item-description">Interstellar</span>
                                 <p class="movie-list-item-desc">Sebuah tim penjelajah antar galaksi harus melewati lubang cacing dan terjebak di dimensi 
                                     waktu ruang angkasa dalam upaya untuk menjamin kelangsungan hidup umat manusia di planet bumi yang hampir punah.</p>
                                     <a href="https://www.imdb.com/title/tt0816692/?ref_=nv_sr_srsg_0"><Button class="movie-list-button">Watch</Button></a>
+                            </div><div class="movie-list-item">
+                                    <img class="movie-list-item-img" src="./Tron.jpg" alt="Tron">
+                                    <span class="movie-list-item-description">Tron: Legacy</span>
+                                    <p class="movie-list-item-desc">Sam yang sangat rindu pada ayahnya, memasuki sebuah ruang virtual 
+                                        yang di buat oleh ayahnya, dan ternyata menjadi jauh lebih berbahaya.</p>
+                                        <a href="https://www.imdb.com/title/tt1104001/?ref_=nv_sr_srsg_0"><Button class="movie-list-button">Watch</Button></a>
                             </div><div class="movie-list-item">
                                 <img class="movie-list-item-img" src="./In Time.jpg" alt="In Time">
                                 <span class="movie-list-item-description">In Time</span>
@@ -71,22 +79,92 @@
                                     Orang kaya jadi abadi, yang lain bejuang untuk hidup.</p>
                                     <a href="https://www.imdb.com/title/tt1637688/?ref_=nv_sr_srsg_0"><Button class="movie-list-button">Watch</Button></a>
                             </div><div class="movie-list-item">
-                                <img class="movie-list-item-img" src="./Inception.jpg" alt="In Time">
-                                <span class="movie-list-item-description">Inception</span>
-                                <p class="movie-list-item-desc">Cobb, mata-mata ahli, mencuri informasi dari targetnya dengan masuk ke dalam mimpi mereka. Ia diburu atas pembunuhan istrinya, 
-                                    dan satu-satunya cara untuk menebus semua ini, adalah degan Inception.</p>
-                                    <a href="https://www.imdb.com/title/tt1375666/"><Button class="movie-list-button">Watch</Button></a>
-                            </div><div class="movie-list-item">
-                                <img class="movie-list-item-img" src="./Tron.jpg" alt="In Time">
-                                <span class="movie-list-item-description">Tron: Legacy</span>
-                                <p class="movie-list-item-desc">Sam yang sangat rindu pada ayahnya, memasuki sebuah ruang virtual 
-                                    yang di buat oleh ayahnya, dan ternyata menjadi jauh lebih berbahaya.</p>
-                                    <a href="https://www.imdb.com/title/tt1104001/?ref_=nv_sr_srsg_0"><Button class="movie-list-button">Watch</Button></a>
-                            </div>
+                                <img class="movie-list-item-img" src="./Jumper.jpeg" alt="Jumper">
+                                <span class="movie-list-item-description">Jumper</span>
+                                <p class="movie-list-item-desc">Becerita tentang  seseorang yang melakukan teleportasi sesuka hati 
+                                    dia namum kehidupannya tidak aman di karena seorang paladin yang ingin membunuh jumper.</p>
+                                    <a href="https://www.imdb.com/title/tt0489099/?ref_=fn_al_tt_1"><Button class="movie-list-button">Watch</Button></a>
                         </div>
                     </div>
+                    <i class="fas fa-chevron-right arrow"></i>
                 </div>
+            </div><div class="movie-list-container">
+                <h1 class="movie-list-title">LOREM</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./x.jpg" alt="x">
+                            <span class="movie-list-item-description">x</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam consequuntur voluptatem
+                                 dolorum molestias libero amet praesentium sit mollitia sint, illum vel natus quisquam modi, culpa ea voluptatibus sunt veritatis!</p>
+                                <a href=""><Button class="movie-list-button">Watch</Button></a>
+                        </div><div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./x.jpg" alt="x">
+                            <span class="movie-list-item-description">x</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam consequuntur voluptatem
+                                 dolorum molestias libero amet praesentium sit mollitia sint, illum vel natus quisquam modi, culpa ea voluptatibus sunt veritatis!</p>
+                                <a href=""><Button class="movie-list-button">Watch</Button></a>
+                        </div><div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./x.jpg" alt="x">
+                            <span class="movie-list-item-description">x</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam consequuntur voluptatem
+                                 dolorum molestias libero amet praesentium sit mollitia sint, illum vel natus quisquam modi, culpa ea voluptatibus sunt veritatis!</p>
+                                <a href=""><Button class="movie-list-button">Watch</Button></a>
+                        </div><div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./x.jpg" alt="x">
+                            <span class="movie-list-item-description">x</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam consequuntur voluptatem
+                                 dolorum molestias libero amet praesentium sit mollitia sint, illum vel natus quisquam modi, culpa ea voluptatibus sunt veritatis!</p>
+                                <a href=""><Button class="movie-list-button">Watch</Button></a>
+                        </div><div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./x.jpg" alt="x">
+                            <span class="movie-list-item-description">x</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam consequuntur voluptatem
+                                 dolorum molestias libero amet praesentium sit mollitia sint, illum vel natus quisquam modi, culpa ea voluptatibus sunt veritatis!</p>
+                                <a href=""><Button class="movie-list-button">Watch</Button></a>
+                        </div>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
             </div>
+        </div><div class="movie-list-container">
+            <h1 class="movie-list-title">LOREM</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="./x.jpg" alt="x">
+                        <span class="movie-list-item-description">x</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam consequuntur voluptatem
+                             dolorum molestias libero amet praesentium sit mollitia sint, illum vel natus quisquam modi, culpa ea voluptatibus sunt veritatis!</p>
+                            <a href=""><Button class="movie-list-button">Watch</Button></a>
+                    </div><div class="movie-list-item">
+                        <img class="movie-list-item-img" src="./x.jpg" alt="x">
+                        <span class="movie-list-item-description">x</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam consequuntur voluptatem
+                             dolorum molestias libero amet praesentium sit mollitia sint, illum vel natus quisquam modi, culpa ea voluptatibus sunt veritatis!</p>
+                            <a href=""><Button class="movie-list-button">Watch</Button></a>
+                    </div><div class="movie-list-item">
+                        <img class="movie-list-item-img" src="./x.jpg" alt="x">
+                        <span class="movie-list-item-description">x</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam consequuntur voluptatem
+                             dolorum molestias libero amet praesentium sit mollitia sint, illum vel natus quisquam modi, culpa ea voluptatibus sunt veritatis!</p>
+                            <a href=""><Button class="movie-list-button">Watch</Button></a>
+                    </div><div class="movie-list-item">
+                        <img class="movie-list-item-img" src="./x.jpg" alt="x">
+                        <span class="movie-list-item-description">x</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam consequuntur voluptatem
+                             dolorum molestias libero amet praesentium sit mollitia sint, illum vel natus quisquam modi, culpa ea voluptatibus sunt veritatis!</p>
+                            <a href=""><Button class="movie-list-button">Watch</Button></a>
+                    </div><div class="movie-list-item">
+                        <img class="movie-list-item-img" src="./x.jpg" alt="x">
+                        <span class="movie-list-item-description">x</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam consequuntur voluptatem
+                             dolorum molestias libero amet praesentium sit mollitia sint, illum vel natus quisquam modi, culpa ea voluptatibus sunt veritatis!</p>
+                            <a href=""><Button class="movie-list-button">Watch</Button></a>
+                    </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+        </div>
+    </div>
         </div>
     </div>
 </body>
