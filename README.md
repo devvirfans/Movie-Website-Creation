@@ -7,4 +7,7 @@
 - Animation when hovering over movies
 
 # Screenshot
-https://drive.google.com/file/d/1OJVhbQzjqkftTMKpaKpGwY7YxN_LVvCb/view?usp=sharing
+https://drive.google.com/file/d/1zKGvqQz2mJ9aCEmu8x-lFgBkSFSIpt2M/view?usp=sharing
+
+# Notes
+Belum mengerti penggunaan JavaScript atau React.js
